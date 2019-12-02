@@ -1,0 +1,70 @@
+2019-11-09 17:59:30,863 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-11-09 17:59:35,187 [INFO ]  Entry Point [tensor2tensor.envs.tic_tac_toe_env:TicTacToeEnv] registered with id [T2TEnv-TicTacToeEnv-v0]
+2019-11-09 18:01:11,021 [ERROR]  Exception occurred while handling uri: unknown
+Traceback (most recent call last):
+  File "c:\users\himan\anaconda3\envs\python_3.6\lib\site-packages\sanic\server.py", line 273, in data_received
+    self.parser.feed_data(data)
+  File "httptools/parser/parser.pyx", line 193, in httptools.parser.parser.HttpParser.feed_data
+httptools.parser.errors.HttpParserInvalidMethodError: invalid HTTP method
+2019-11-09 18:01:40,945 [ERROR]  Exception occurred while handling uri: unknown
+Traceback (most recent call last):
+  File "c:\users\himan\anaconda3\envs\python_3.6\lib\site-packages\sanic\server.py", line 273, in data_received
+    self.parser.feed_data(data)
+  File "httptools/parser/parser.pyx", line 193, in httptools.parser.parser.HttpParser.feed_data
+httptools.parser.errors.HttpParserInvalidMethodError: invalid HTTP method
+2019-11-09 18:02:27,720 [ERROR]  Exception occurred while handling uri: unknown
+Traceback (most recent call last):
+  File "c:\users\himan\anaconda3\envs\python_3.6\lib\site-packages\sanic\server.py", line 273, in data_received
+    self.parser.feed_data(data)
+  File "httptools/parser/parser.pyx", line 193, in httptools.parser.parser.HttpParser.feed_data
+httptools.parser.errors.HttpParserInvalidMethodError: invalid HTTP method
+2019-11-09 18:12:25,913 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/model/parse'
+Traceback (most recent call last):
+  File "c:\users\himan\anaconda3\envs\python_3.6\lib\site-packages\sanic\app.py", line 918, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "c:\users\himan\anaconda3\envs\python_3.6\lib\site-packages\sanic\router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\himan\anaconda3\envs\python_3.6\lib\site-packages\sanic\router.py", line 447, in _get
+    raise method_not_supported
+sanic.exceptions.MethodNotSupported: Method GET not allowed for URL /model/parse
+2019-11-09 18:17:34,045 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-11-09 18:17:38,277 [INFO ]  Entry Point [tensor2tensor.envs.tic_tac_toe_env:TicTacToeEnv] registered with id [T2TEnv-TicTacToeEnv-v0]
+2019-11-09 18:17:41,076 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/model/parse'
+Traceback (most recent call last):
+  File "c:\users\himan\anaconda3\envs\python_3.6\lib\site-packages\sanic\app.py", line 918, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "c:\users\himan\anaconda3\envs\python_3.6\lib\site-packages\sanic\router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\himan\anaconda3\envs\python_3.6\lib\site-packages\sanic\router.py", line 447, in _get
+    raise method_not_supported
+sanic.exceptions.MethodNotSupported: Method GET not allowed for URL /model/parse
+2019-11-09 18:18:41,195 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/model/parse'
+Traceback (most recent call last):
+  File "c:\users\himan\anaconda3\envs\python_3.6\lib\site-packages\sanic\app.py", line 918, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "c:\users\himan\anaconda3\envs\python_3.6\lib\site-packages\sanic\router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\himan\anaconda3\envs\python_3.6\lib\site-packages\sanic\router.py", line 447, in _get
+    raise method_not_supported
+sanic.exceptions.MethodNotSupported: Method GET not allowed for URL /model/parse
+2019-12-01 11:22:12,331 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-12-01 11:22:26,115 [INFO ]  Entry Point [tensor2tensor.envs.tic_tac_toe_env:TicTacToeEnv] registered with id [T2TEnv-TicTacToeEnv-v0]
+2019-12-01 11:22:50,900 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_lg'.
+2019-12-01 11:23:00,096 [WARNI]  Could not parse timestamp 5965a24e0f9541ca91b3ad9d3bf5f263. Instead current UTC time will be passed to duckling. Error: invalid literal for int() with base 10: '5965a24e0f9541ca91b3ad9d3bf5f263'
+2019-12-01 11:23:04,139 [ERROR]  Failed to connect to duckling http server. Make sure the duckling server is running/healthy/not stale and the proper host and port are set in the configuration. More information on how to run the server can be found on github: https://github.com/facebook/duckling#quickstart Error: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /parse (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D2D4E16DA0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+2019-12-01 11:23:04,146 [WARNI]  Interpreter parsed an entity 'PERSON' that is not defined in the domain.
+2019-12-01 12:44:22,743 [WARNI]  Could not parse timestamp 72e59868f3bf4dfabbc168b062857a20. Instead current UTC time will be passed to duckling. Error: invalid literal for int() with base 10: '72e59868f3bf4dfabbc168b062857a20'
+2019-12-01 12:44:26,795 [ERROR]  Failed to connect to duckling http server. Make sure the duckling server is running/healthy/not stale and the proper host and port are set in the configuration. More information on how to run the server can be found on github: https://github.com/facebook/duckling#quickstart Error: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /parse (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D2D5E82B70>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+2019-12-01 12:44:26,799 [WARNI]  Interpreter parsed an entity 'PERSON' that is not defined in the domain.
+2019-12-01 12:44:32,387 [WARNI]  Could not parse timestamp b07c4374d7d9442580f658cf08564ba9. Instead current UTC time will be passed to duckling. Error: invalid literal for int() with base 10: 'b07c4374d7d9442580f658cf08564ba9'
+2019-12-01 12:44:36,450 [ERROR]  Failed to connect to duckling http server. Make sure the duckling server is running/healthy/not stale and the proper host and port are set in the configuration. More information on how to run the server can be found on github: https://github.com/facebook/duckling#quickstart Error: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /parse (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D2D5E82F60>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+2019-12-01 12:44:36,458 [WARNI]  Interpreter parsed an entity 'PERSON' that is not defined in the domain.
+2019-12-01 12:44:46,191 [WARNI]  Could not parse timestamp 1e023c4897f2470fb28ecc213ec483fb. Instead current UTC time will be passed to duckling. Error: invalid literal for int() with base 10: '1e023c4897f2470fb28ecc213ec483fb'
+2019-12-01 12:44:50,258 [ERROR]  Failed to connect to duckling http server. Make sure the duckling server is running/healthy/not stale and the proper host and port are set in the configuration. More information on how to run the server can be found on github: https://github.com/facebook/duckling#quickstart Error: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /parse (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D2D5E8ECC0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+2019-12-01 12:44:50,266 [WARNI]  Interpreter parsed an entity 'PERSON' that is not defined in the domain.
+2019-12-02 11:21:33,322 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-12-02 11:21:41,838 [INFO ]  Entry Point [tensor2tensor.envs.tic_tac_toe_env:TicTacToeEnv] registered with id [T2TEnv-TicTacToeEnv-v0]
+2019-12-02 11:21:53,571 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_lg'.
+2019-12-02 11:40:13,325 [WARNI]  Could not parse timestamp 78374963c85f415fb4375610b2a43615. Instead current UTC time will be passed to duckling. Error: invalid literal for int() with base 10: '78374963c85f415fb4375610b2a43615'
+2019-12-02 11:40:17,376 [ERROR]  Failed to connect to duckling http server. Make sure the duckling server is running/healthy/not stale and the proper host and port are set in the configuration. More information on how to run the server can be found on github: https://github.com/facebook/duckling#quickstart Error: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /parse (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015F12906CF8>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+2019-12-02 11:40:17,384 [WARNI]  Interpreter parsed an entity 'PERSON' that is not defined in the domain.
