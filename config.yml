@@ -1,11 +1,54 @@
-# Configuration for Rasa NLU.
-# https://rasa.com/docs/rasa/nlu/components/
 language: en
-pipeline: supervised_embeddings
-
-# Configuration for Rasa Core.
-# https://rasa.com/docs/rasa/core/policies/
+pipeline:
+- name: SpacyNLP
+  model: en_core_web_lg
+- name: SpacyTokenizer
+- name: SpacyEntityExtractor
+- name: DucklingHTTPExtractor
+  url: http://localhost:8000
+  dimensions:
+  - time
+  - number
+  - amount-of-money
+  - distance
+  - email
+  - url
+  - phone-number
+  - duration
+  - volume
+  - ordinal
+  - temperature
+  locale: en_MY
+  tz: Asia/Kuala_Lumpur
+  timeout: 3
+- name: EntitySynonymMapper
+- name: CRFEntityExtractor
+  BILOU_flag: true
+  features:
+  - - low
+    - title
+    - upper
+    - pos
+    - pos2
+  - - bias
+    - low
+    - word3
+    - word2
+    - upper
+    - title
+    - digit
+    - pos
+    - pos2
+    - pattern
+  - - low
+    - title
+    - upper
+    - pos
+    - pos2
+  max_iterations: 50
+  L1_c: 1
+  L2_c: 0.001
 policies:
-  - name: MemoizationPolicy
-  - name: KerasPolicy
-  - name: MappingPolicy
+- name: MemoizationPolicy
+- name: KerasPolicy
+- name: MappingPolicy
